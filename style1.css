@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Tapestry&family=Water+Brush&display=swap');
+body {
+	  
+   
+font-family: 'Orelega One', cursive
+
+    font-size: 20px;
+    color: white;
+    
+}
+p {
+    line-height: 1.9;
+}
+.navbar-expand-lg .navbar-nav .tm-nav-link {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 50px;
+}
+/*link space*/
+.nav-item {
+    margin-right: 100px;
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+/* link color
+*/
+.nav-item:hover .tm-nav-link {
+    color: blue;
+}
+.tm-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*main*/
+.tm-row {
+    display: flex;
+}
+
+.tm-col-left {
+    width: 70%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.tm-col-right {
+    width: 250%;
+    height: 100%;
+    padding-left: 60px;
+    padding-right: 100px;
+}
+.welcome {
+    font-size: 2.5rem;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 50%;
+}
+.typewriter{
+  color: #fff;
+ 
+font-family: 'Orelega One', cursive;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(30, end),
+    blink-caret .2s infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}

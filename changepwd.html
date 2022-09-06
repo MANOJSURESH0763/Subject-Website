@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Untitled Document</title>
+        
+    </head>
+    
+    <script type="text/javascript">
+            
+        function validateForm()
+        {
+                
+            if(Form_obj.unametxt.value.length===0)
+    {
+        alert("Please, fill up the user name!!!");
+
+        Form_obj.unametxt.focus();
+        return false;
+    }
+    if(Form_obj.passtxt.value.length===0)
+    {
+        alert("Please, fill up the password!!!");
+
+        Form_obj.passtxt.focus();
+        return false;
+    }
+    
+    return true; 
+        }
+              
+           
+            
+           
+    </script>
+
+<body bgcolor="violet">
+    <form name="myForm" method="post" action="changepwd.jsp" onsubmit="return validateForm()">
+        <center>
+            <h1 class="style1">CHANGE YOUR PASSWORD</h1>
+        </center>
+        
+            
+            <p>
+                <center>
+                    <span>Enter your Code :</span>&nbsp;
+                    <input type="password" name="UID" value="" size="30" />
+                </center>
+            </p>
+            <p></p>
+            <p>
+                <center>
+                    <span>Enter New Password :</span>&nbsp;
+                    <input type="password" name="pswd" value="" size="30" />
+                </center>
+            </p>
+            <p> </p>
+             <center>
+                    <span>Enter New USN :</span>&nbsp;
+                    <input type="text" name="USN" value="" size="30" />
+                </center>
+            </p>
+            <p> </p>
+            <p></p>
+            <p>
+                <center>
+                    <input type="submit" name="submit" value="SUBMIT">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset"name="reset"value="RESET" />
+                </center>
+            </p>
+            <div align="center"><a href="index.html">BACK</a>  </div>
+        </form>
+        
+            
+        
+</body>
+</html>
